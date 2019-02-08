@@ -29,12 +29,14 @@ nav {
   grid-area: nav;
 }
 
-.section-one:nth-of-type(2) {
-  background-color: #f442ce; 
+.section-one {
+  background-color: pink;
   grid-area: section-one;
 }
 
-.section-two:nth-of-type(2) {
+.section-two {
   background-color: #41f462;
   grid-area: section-two;
 }
+
+
