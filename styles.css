@@ -1,0 +1,40 @@
+body, html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 18% 56% 26%;
+  grid-template-rows: 12% 18% 25% 55%;
+  grid-template-areas: 
+  "sidebar header header"
+  "sidebar nav nav"
+  "sidebar section-one section-one"
+  "sidebar section-two section-two"
+}
+
+aside {
+  background-color: #1367ef;
+  grid-area: sidebar;
+}
+
+header {
+  background-color: #c4d3f2;
+  grid-area: header; 
+}
+
+nav {
+  background-color: #9ab7f4;
+  grid-area: nav;
+}
+
+.section-one:nth-of-type(2) {
+  background-color: #f442ce; 
+  grid-area: section-one;
+}
+
+.section-two:nth-of-type(2) {
+  background-color: #41f462;
+  grid-area: section-two;
+}
