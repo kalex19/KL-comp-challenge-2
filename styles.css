@@ -15,13 +15,13 @@ body{
   "sidebar section-two section-two"
 }
 
-aside {
+.sidebar {
   background-color: #293941;
   grid-area: sidebar;
 }
 
 header {
-  background-color: #EE6C4D;
+  background-color: #E0FBFC;
   grid-area: header; 
 }
 
@@ -70,7 +70,7 @@ img {
   color: #E0FBFC; 
 }
 
-.third-aside-menu{
+.third-aside-menu {
   display: block;
 }
 
@@ -79,6 +79,11 @@ img {
     margin:0 5px 0 -15px;
     color: #f00;*/
 
+.header p {
+  color: #a9abad;
+}
 
+/*#EE6C4D
+#3D5A80*/
 
 

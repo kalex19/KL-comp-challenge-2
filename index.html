@@ -10,7 +10,7 @@
   <title>Document</title>
 </head>
 <body>
-  <aside>
+  <aside class="sidebar">
     <div class="user-profile">
       <img src="Images/Defy Headshot.png" alt="Potential Employee Headshot">
       <form>
@@ -23,19 +23,19 @@
       </form>
       <!-- dropdown icon still needed --></div>
     <div>
-    <ul class="first-aside-menu">
-      <li><p>Main</p></li>
-      <li><i class="fas fa-home"></i><p>HOME</p>
-      </li>
-      <li><i class="fas fa-suitcase"></i><p>JOBS</p>
-      </li>
-      <li><i class="fas fa-newspaper"></i><p>RESUME</p>
-      </li>
-      <li><i class="fas fa-paperclip"></i><p>TASKS</p></li>
-      <li><i class="fas fa-calendar-alt"></i><p>CALENDAR</p></li>
-    </ul> 
+      <ul class="first-aside-menu">
+        <li><p>Main</p></li>
+        <li><i class="fas fa-home"></i><p>HOME</p>
+        </li>
+        <li><i class="fas fa-suitcase"></i><p>JOBS</p>
+        </li>
+        <li><i class="fas fa-newspaper"></i><p>RESUME</p>
+        </li>
+        <li><i class="fas fa-paperclip"></i><p>TASKS</p></li>
+        <li><i class="fas fa-calendar-alt"></i><p>CALENDAR</p></li>
+      </ul> 
     <!-- icons are not showing up & grid spacing -->
-  </div>
+    </div>
     <div>
       <ul class="second-aside-menu">
         <p>Admin</p>
@@ -48,21 +48,55 @@
     </div>
     <div class="third-aside-menu">
       <p>Categories</p>
-      <input type="checkbox"><label>Front End Engineer</label>
-      <input type="checkbox"><label>Back End Engineer</label>
+      <input type="checkbox"><label>Front End Developer</label>
+      <input type="checkbox"><label>Back End Developer</label>
       <input type="checkbox"><label>Location</label>
       <input type="checkbox"><label>Freelancer</label>
     <!-- colored catagory checkboxes & spacing -->
     </div>
   </aside>
-  <header>
-    <div><!-- aside hamburger menu --></div>
-    <div><!-- Search bar --></div>
-    <div><!-- three hover buttons --></div>
+  <header class="header">
+    <div>
+      <i class="fas fa-caret-left"></i><i class="fas fa-bars"></i> 
+        <!-- aside hamburger menu & line -->
+    </div>
+    <div>
+      <i class="fas fa-search"></i><p>Search for canidates, mentors, or jobs</p>
+      <!-- Search bar & line -->
+    </div>
+    <div>
+      <i class="fas fa-phone"></i>
+      <i class="fas fa-calendar-alt"></i>
+      <i class="fas fa-th"></i>
+      <!-- three hover buttons & lines -->
+      </div>
   </header>
   <nav>
-    <aside><!-- left - text and icon --></aside>
-    <aside><!-- four buttons --></aside>
+    <aside>
+      <div>
+        <h1>Front End Developer</h1>
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Canyon City, CO</p>
+        <p>View on Map</p>
+      </div>
+      <!-- left - text and icon & hover state on map view -->
+      <div>
+        <button>Open</button>
+        <i class="fas fa-bookmark"></i>
+        <i class="fas fa-trash-alt"></i>
+        <i class="fas fa-pen"></i>
+      </div>
+      <ul>
+        <li>PROFILE</li>
+        <li>RESUME</li>
+        <li>SKILLS</li>
+        <li>RECOMMENDATIONS</li>
+        <li>PORTFOLIO</li>
+        <li>SCHEDULE</li>
+        <li>NOTIFICATIONS</li>
+      </ul>
+    </aside>
+    <aside><!-- four buttons & underline hover --></aside>
     <div><!-- ul seven menu options --></div>
   </nav>
   <section class="section-one">
@@ -89,21 +123,15 @@
 
 
 
-<!-- <i class="fas fa-bars"></i> Hamburger Menu
+<!--
 <i class="fas fa-link"></i>Chain Icon
-<i class="fas fa-map-marker-alt"></i> LOCATION 
 <i class="fab fa-cc-apple-pay"></i>Pay Icon
-<i class="fas fa-trash-alt"></i>Delete Icon
-<i class="fas fa-bookmark"></i>Bookmark Icon
-<i class="fas fa-pen"></i>WriteCommentIcon
 <i class="fas fa-th"></i>Boxes Icon
 <i class="fas fa-building"></i>Building Icon
 <i class="fab fa-codepen"></i>CodePen Icon
-<i class="fas fa-phone"></i>Phone Icon
 <i class="fas fa-laptop-code"></i>Remote Icon
 CodeBranch Icon
 <i class="fas fa-file-upload"></i>Upload Icon
-<i class="fas fa-search"></i>Search Icon
 <i class="fas fa-door-open"></i>DorrOpen Icon
 <i class="fas fa-dungeon"></i>Jail Icon
 <i class="fas fa-award"></i>Award Icon
