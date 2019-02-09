@@ -23,8 +23,8 @@
       </form>
       <!-- dropdown icon still needed --></div>
     <div>
-    <p>Menu</p>
-    <ul>
+    <ul class="first-aside-menu">
+      <li><p>Main</p></li>
       <li><i class="fas fa-home"></i><p>HOME</p>
       </li>
       <li><i class="fas fa-suitcase"></i><p>JOBS</p>
@@ -33,9 +33,27 @@
       </li>
       <li><i class="fas fa-paperclip"></i><p>TASKS</p></li>
       <li><i class="fas fa-calendar-alt"></i><p>CALENDAR</p></li>
-    </ul> <!-- unordered list menu --></div>
-    <div><!-- unordered list menu --></div>
-    <div> <!-- colored catagory checkboxes --></div>
+    </ul> 
+    <!-- icons are not showing up & grid spacing -->
+  </div>
+    <div>
+      <ul class="second-aside-menu">
+        <p>Admin</p>
+        <li><i class="fas fa-user"></i><p>USERS</p></li>
+        <li><i class="fas fa-address-book"></i><p>NETWORK CONNECTIONS</p></li>
+        <li><i class="fas fa-code-branch"></i><p>PROJECT WORKFLOW</p></li>
+        <li><i class="fas fa-user-tie"></i><p>JOB BOARD</p></li>
+        <li><i class="fab fa-stack-exchange"></i><p>MENTORING</p></li>
+      </ul>
+    </div>
+    <div class="third-aside-menu">
+      <p>Categories</p>
+      <input type="checkbox"><label>Front End Engineer</label>
+      <input type="checkbox"><label>Back End Engineer</label>
+      <input type="checkbox"><label>Location</label>
+      <input type="checkbox"><label>Freelancer</label>
+    <!-- colored catagory checkboxes & spacing -->
+    </div>
   </aside>
   <header>
     <div><!-- aside hamburger menu --></div>
@@ -72,14 +90,8 @@
 
 
 <!-- <i class="fas fa-bars"></i> Hamburger Menu
-<i class="fas fa-user"></i>User Icon
-<i class="fas fa-user-tie"></i>Professional Icon
-<i class="fas fa-users"></i>Users Icon
-<i class="fas fa-map-marker-alt"></i>Location Icon
 <i class="fas fa-link"></i>Chain Icon
-<i class="fab fa-stack-exchange"></i>Conversation Icon
-<i class="fas fa-address-book"></i>AddressBook Icon
-<i class="fas fa-bezier-curve"></i>Workflow Icon
+<i class="fas fa-map-marker-alt"></i> LOCATION 
 <i class="fab fa-cc-apple-pay"></i>Pay Icon
 <i class="fas fa-trash-alt"></i>Delete Icon
 <i class="fas fa-bookmark"></i>Bookmark Icon
@@ -89,7 +101,7 @@
 <i class="fab fa-codepen"></i>CodePen Icon
 <i class="fas fa-phone"></i>Phone Icon
 <i class="fas fa-laptop-code"></i>Remote Icon
-<i class="fas fa-code-branch"></i>CodeBranch Icon
+CodeBranch Icon
 <i class="fas fa-file-upload"></i>Upload Icon
 <i class="fas fa-search"></i>Search Icon
 <i class="fas fa-door-open"></i>DorrOpen Icon

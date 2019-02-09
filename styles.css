@@ -7,7 +7,7 @@ body{
   margin: 0;
   display: grid;
   grid-template-columns: 18% 56% 26%;
-  grid-template-rows: 12% 18% 25% 55%;
+  grid-template-rows: 10% 15% 20% 55%;
   grid-template-areas: 
   "sidebar header header"
   "sidebar nav nav"
@@ -21,7 +21,7 @@ aside {
 }
 
 header {
-  background-color: #E0FBFC;
+  background-color: #EE6C4D;
   grid-area: header; 
 }
 
@@ -52,8 +52,33 @@ img {
 }
 
 .potential-employee-dropdown {
-   -webkit-appearance: none;
-   border: #000;
+/*style border and down arrow*/
 }
+
+.first-aside-menu,
+.second-aside-menu,
+.third-aside-menu {
+  margin: 16px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.first-aside-menu p,
+.second-aside-menu p,
+.third-aside-menu p,
+.third-aside-menu label {
+  color: #E0FBFC; 
+}
+
+.third-aside-menu{
+  display: block;
+}
+
+/*ul li:before {    
+    content: '\f015', '\f133';
+    margin:0 5px 0 -15px;
+    color: #f00;*/
+
+
 
 
