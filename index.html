@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-   <link rel="stylesheet" href="/Users/kate/Desktop/Turing/Mod1/StaticCompTwo/styles.css">
+  <link rel="stylesheet" href="/Users/kate/Desktop/Turing/Mod1/StaticCompTwo/styles.css">
   <title>Static Comp Two</title>
 </head>
 <body>
@@ -22,71 +22,69 @@
             <option value="Big Mak">Big Mak</option>
           </select> 
         </form>
-        <!-- dropdown icon still needed --></div>
+        </div>
         <div>
-          <ul class="first-aside-menu">
-            <li><p>Main</p></li>
-            <li><p><i class="fas fa-home"></i>HOME</p>
-            </li>
-            <li><p><i class="fas fa-suitcase"></i>JOBS</p>
-            </li>
-            <li><p><i class="fas fa-newspaper"></i>RESUME</p>
-            </li>
-            <li><p><i class="fas fa-paperclip"></i>TASKS</p></li>
-            <li><p><i class="fas fa-calendar-alt"></i>CALENDAR</p></li>
+          <ul class="aside-menu">
+            <li>Main</li>
+            <li><i class="fas fa-home"></i>HOME</li>
+            <li><i class="fas fa-suitcase"></i>JOBS</li>
+            <li><i class="fas fa-newspaper"></i>RESUME</li>
+            <li><i class="fas fa-paperclip"></i>TASKS</li>
+            <li><i class="fas fa-calendar-alt"></i>CALENDAR</li>
           </ul> 
         </div>
         <div>
-          <ul class="second-aside-menu">
-            <li><p>Admin</p></li>
-            <li><p><i class="fas fa-user"></i>USERS</p></li>
-            <li><p><i class="fas fa-address-book"></i>NETWORK</p></li>
-            <li><p><i class="fas fa-code-branch"></i>WORKFLOWS</p></li>
-            <li><p><i class="fas fa-user-tie"></i>JOB BOARD</p></li>
-            <li><p><i class="fab fa-stack-exchange"></i>MENTORING</p></li>
+          <ul class=" aside-menu">
+            <li>Admin</li>
+            <li><i class="fas fa-user"></i>USERS</li>
+            <li><i class="fas fa-address-book"></i>NETWORK</li>
+            <li><i class="fas fa-code-branch"></i>WORKFLOWS</li>
+            <li><i class="fas fa-user-tie"></i>JOB BOARD</li>
+            <li><i class="fab fa-stack-exchange"></i>MENTORING</li>
           </ul>
         </div>
-        <div class="third-aside-menu"><ul>
-          <p>Filter By:</p>
-          <li><input type="checkbox" class="checkbox1"><label>Job Title</label></li>
-          <li><input type="checkbox"class="checkbox2"><label>Experience Level</label></li>
-          <li><input type="checkbox"class="checkbox3"><label>Release Date</label></li>
-          <li><input type="checkbox"class="checkbox4"><label>Location</label></li>
-          <!-- colored catagory checkboxes & spacing -->
-        </ul>
+        <div >
+          <ul class="aside-menu">
+            <p>Filter By:</p>
+            <div class="checkbox-1">
+              <li><input type="checkbox" ><label>Job Title</label></li>
+            </div>
+            <div class="checkbox-2">
+              <li><input type="checkbox"><label>Experience Level</label></li></div>
+            <div class="checkbox-3">
+              <li><input type="checkbox"><label>Release Date</label></li></div>
+            <div class="checkbox-4">
+              <li><input  type="checkbox"><label>Location</label></li></div>   
+          </ul>
         </div>
       </aside>
-      <header class="header">
+    <header class="header">
         <div class="header-bar-one">
           <i class="fas fa-caret-left fa-2x"></i><i class="fas fa-bars fa-2x"></i> 
         </div>
         <div class="header-bar-two">
-          <i class="fas fa-search fa-2x"></i>
+          <i class="fas fa-search icon-style fa-2x"></i>
           <input type="text" value="Search for applicants, mentors, or jobs" >
         </div>
         <div class= "header-bar-three">
-          <i class="fas fa-phone fa-2x"></i>
-          <i class="fas fa-calendar-alt fa-2x"></i>
-          <i class="fas fa-th fa-2x"></i>
+          <i class="fas fa-phone icon-style fa-2x"></i>
+          <i class="fas fa-calendar-alt icon-style fa-2x"></i>
+          <i class="fas fa-th icon-style fa-2x"></i>
         </div>
       </header>
-      <nav>
-        <aside class="nav-aside-left">
-          <!-- <div class="nav-left"> -->
-            <h1>Front End Developer</h1>
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Canyon City, CO</p>
-            <p>View on Map</p>
-          <!-- </div> -->
-        </aside>
-        <aside class="nav-aside-right">
-        <!--   <div class="nav-right"> -->
-            <button>Open</button>
-            <button><i class="fas fa-bookmark"></i></button>
-            <button><i class="fas fa-trash-alt"></i></button>
-            <button><i class="fas fa-pen"></i></button>
-       <!--    </div> -->
-        </aside>
+    <nav>
+      <aside class="nav-aside-left">
+        <h1>Front End Developer</h1>
+          <i class="fas fa-map-marker-alt icon-style"></i>
+          <p>Canyon City, CO</p>
+          <p><a href="#">View on Map</a></p>
+      </aside>
+      <aside class="nav-aside-right">
+        <button class="open-btn">Open</button>
+        <button><i class="fas fa-bookmark"></i></button>
+        <button><i class="fas fa-trash-alt"></i></button>
+        <button><i class="fas fa-pen"></i></button>
+      </aside>
         <div >
           <ul class="nav-menu-bar">
             <li>PROFILE</li>
@@ -99,75 +97,80 @@
           </ul>
         </div>
       </nav>
-      <section class="section-one">
+    <section class="section-one">
        <div>
-        <img src="" alt="Repos Data">
-        <img src="" alt="Branches Data">
-        <img src="" alt="Commits Data">
-        <button>Total</button>
+          <img src="" alt="Repos Data">
+          <img src="" alt="Branches Data">
+          <img src="" alt="Commits Data">
+          <button>Total</button>
       </div>
       <div>
-          <img src="" alt="Commit Daily Data">
-          <button>View In Depth</button>
-        </div>
-        <div class="throughline"><button><i class="fas fa-angle-up"></i></button></div>
-       
-      </section> 
-      <section class="section-two">
-       <article>
-         <div >
-          <table>
-            <tr>
-              <th>PROFILE</th>
-              <th><button><i class="fas fa-pencil-alt"></i>EDIT</button></th>
-            </tr>
-            <tr>
-              <th>JOB TITLE</th>
-              <th>Front End Developer</th>
-            </tr>
-            <tr>
-              <th>LOCATION</th>
-              <th>Canyon City, CO</th>
-            </tr>
-            <tr>
-              <th>EMPLOYMENT TYPE</th>
-              <th>Full-Time</th>
-            </tr>
-            <tr>
-              <th>EXPERIENCE</th>
-              <th>Entry</th>
-            </tr>
-            <tr>
-              <th>STATUS</th>
-              <th>Actively Searching</th>
-            </tr>
-            <tr>
-              <th>ABOUT</th>
-              <th>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quisquam quos, veniam illo odit, obcaecati fugiat magnam, possimus ullam hic dolorem, aliquid vero nisi mollitia error accusamus rerum beatae minima.</th>
-            </tr>
-            <tr>
-              <th>RELEASED DATE</th>
-              <th>December 3rd</th>
-            </tr>
-            <tr>
-              <th>SUGGESTED SALARY</th>
-              <th>$45,000</th>
-            </tr>
-          </table>
+        <img src="" alt="Commit Daily Data">
+        <button>View In Depth</button>
+      </div>
+      <div class="throughline">
+        <button><i class="fas fa-angle-up"></i></button>
+      </div>
+
+    </section> 
+    <section class="section-two">
+    <article>
+      <div >
+        <table>
+         <tr>
+          <th>PROFILE</th>
+          <th><button><i class="fas fa-pencil-alt icon-style"></i>EDIT</button></th>
+          </tr>
+          <tr>
+            <th>JOB TITLE</th>
+            <th>Front End Developer</th>
+          </tr>
+          <tr>
+            <th>LOCATION</th>
+            <th>Canyon City, CO</th>
+          </tr>
+          <tr>
+            <th>EMPLOYMENT TYPE</th>
+            <th>Full-Time</th>
+          </tr>
+          <tr>
+            <th>EXPERIENCE</th>
+            <th>Entry</th>
+          </tr>
+          <tr>
+            <th>STATUS</th>
+            <th>Actively Searching</th>
+          </tr>
+          <tr>
+            <th>ABOUT</th>
+            <th>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quisquam quos, veniam illo odit, obcaecati fugiat magnam, possimus ullam hic dolorem, aliquid vero nisi mollitia error accusamus rerum beatae minima.</th>
+          </tr>
+          <tr>
+            <th>RELEASED DATE</th>
+            <th>December 3rd</th>
+          </tr>
+          <tr>
+            <th>SUGGESTED SALARY</th>
+            <th>$45,000</th>
+           </tr>
+        </table>
         </div>
       </article>
       <article class="section-side-content">
-       <div class="side-buttons"><button><i class="fab fa-cc-apple-pay"></i>Donate</button>
-        <button><i class="fas fa-door-open"></i>Hire</button>
-        <button><i class="fas fa-link"></i>Sponsor</button></div>
-        <div><i class="fab fa-codepen"></i>Link to Codepen <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum molestias ex sint expedita explicabo!</p><input type="" name="" value="http://www.copdepen.eieio">
+        <div class="side-buttons">
+          <button class='apple-pay-btn'><i class="fab fa-cc-apple-pay icon-style"></i>Donate</button>
+          <button class="hire-btn"><i class="fas fa-door-open icon-style"></i>Hire</button>
+          <button class="link-btn"><i class="fas fa-link icon-style"></i>Sponsor</button></div>
+        <div>
+          <i class="fab fa-codepen icon-style"></i>Link to Codepen <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum molestias ex sint expedita explicabo!</p><input type="" name="" value="http://www.copdepen.eieio">
           <button>Link</button></div>
-          <div><i class="fas fa-award"></i>Support Work<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus voluptas reiciendis officia neque vero!</p><input type="" name="" value="http://www.promotemywork.me"><button>Promote</button></div>
-          <div class="section-side-content-three"><i class="fas fa-user-graduate"></i>Contact Graduate<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio expedita consequuntur laborum. Dolore, facere.</p><input type="text" name="" value="www.jail@bird.con">
-        </article>
-      </section>
-    </div> 
-  </body>
-  </html>
+        <div>
+          <i class="fas fa-award icon-style"></i>Support Work<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus voluptas reiciendis officia neque vero!</p><input type="" name="" value="http://www.promotemywork.me"><button>Promote</button></div>
+        <div class="section-side-content-three">  <i class="fas fa-user-graduate icon-style"></i>Contact Graduate<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio expedita consequuntur laborum. Dolore, facere.</p><input type="text" name="" value="www.jail@bird.con">
+      </article>
+    </section>
+  </div> 
+</body>
+</html>
 
 

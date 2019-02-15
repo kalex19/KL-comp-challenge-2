@@ -1,49 +1,66 @@
-html{
+html {
   box-sizing: border-box;
   font-family: 'Staatliches';
 }
 
 body{
-  
-  /*line-height: 1px;*/
   margin: 0;
 }
 
-.wrapper{
+.wrapper { 
   display: grid;
-  grid-gap: 0px;
   grid-template-columns: 18% 56% 26%;
   grid-template-rows: 10% 10% 20% auto;
+}
 
+.sidebar {
+  background-color: #293941;
+  display: grid;
+  grid-template-rows: .2fr .8fr .8fr 1fr;
+  grid-area: 1 / 1 / 5 / 2;
+}
+
+.user-profile {
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  margin: 1em;
+}
+
+.aside-menu {
+  display: inline;
+  margin: 4%;
+}
+
+aside li {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8%;
 }
 
 .sidebar i {
   color: #E0FBFC;
 }
 
-.sidebar {
-  background-color: #293941;
-  display: grid;
-  padding: 0;
-  grid-template-columns: 1fr;
-  grid-template-rows: .2fr .8fr .8fr 1fr;
-  grid-area: 1 / 1 / 5 / 2;
+.aside-menu li,
+.aside-menu label {
+  color: #E0FBFC;
+  margin:0%;
+  padding: 2%; 
 }
 
-
-
-
-p {
-  padding:0;
-  font-size: 1em;
-  font-weight: 300;
+.icon-style,
+.sidebar i {
+  padding-right: 5px;
 }
 
 header {
-  background-color: #E0FBFC;
+  background-color: #fff;
   display: flex;
   grid-area: 1 / 2 / 2 / 4;
-  padding: 0 1%;
+  padding: 2%;
 }
 
 .header-bar-one {
@@ -56,16 +73,79 @@ header {
 
 .header-bar-three {
    width:10%;
+}
 
+.header input, 
+.header i {
+  color: #9fa3a8; 
+}
+
+input {
+  width: 30%;
+  height: 30px;
+  border: 0px solid;
 }
 
 nav {
   background-color: #E0FBFC;
   display: grid;
   grid-area: 2 / 2 / 3 / 4;
-  padding: 0 1%;
+  padding: 3% 1%;
   grid-template-columns: 50% 50%;
   grid-template-rows: 70% 30%;
+}
+
+p {
+  padding:0;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+h1 {
+  margin:0;
+  padding:0;
+}
+
+.open-btn::before {
+ color: green;
+ border-radius: 50%;
+}
+
+.nav-aside-left,
+.nav-aside-right {
+  display: block;
+}
+
+.nav-aside-left p,
+.nav-aside-right p {
+  padding:2%;
+  margin:0;
+  display: inline;
+}
+
+.nav-aside-right {
+ text-align: right;
+ margin-right: 5%;
+}
+
+.nav-aside-right button {
+  border-radius: 45%;
+  padding: 5px;
+
+}
+
+ .nav-aside-left a::hover {
+ color:  #a9abad;
+}
+
+.nav-menu-bar {
+  margin:0;
+  display: flex;
+}
+
+.nav-menu-bar li {
+  padding-left: 10%;
+  margin-top: 5%;
 }
 
 .section-one {
@@ -75,63 +155,6 @@ nav {
   padding: 0 1%;
   grid-template-columns: 50% auto;
   grid-template-rows: 60% 30% 10%;
-}
-
-.section-two {
-  background-color: #98C1D9;
-  display: grid;
-  grid-area: 4 / 2 / 5 / 4;
-  padding: 0 1%;
-  grid-template-columns: 70% 30%;
-}
-
-.user-profile {
-  display: block;
-  text-align: center;
-}
-
-img {
-  border-radius: 50%;
-  margin: 1em;
-  padding: 0;
-  max-width: 100%;
-}
-
-.potential-employee-dropdown {
-/*style border and down arrow*/
-}
-
-.first-aside-menu,
-.second-aside-menu,
-.third-aside-menu {
-  display: inline;
-  margin: 4%;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-
- 
-}
-
-.first-aside-menu p,
-.second-aside-menu p,
-.third-aside-menu p,
-.third-aside-menu label {
-  color: #E0FBFC;
-  margin:0%;
-  padding: 2%; 
-}
-
-
-
-
-/*ul li:before {    
-    content: '\f015', '\f133';
-    margin:0 5px 0 -15px;
-    color: #f00;*/
-
-.header p {
-  color: #a9abad;
 }
 
 ul {
@@ -153,75 +176,32 @@ th {
   text-align: start;
 }
 
-
-aside li {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 8%;
-
+.section-two {
+  background-color: #98C1D9;
+  display: grid;
+  grid-area: 4 / 2 / 5 / 4;
+  padding: 0 1%;
+  grid-template-columns: 70% 30%;
 }
-
-
-.nav-aside-left,
-.nav-aside-right{
-  display: block;
-}
-
-.nav-aside-left p,
-.nav-aside-right p{
-  padding:0;
-  margin:0;
-  display: inline;
-}
-
-.nav-left,
-.nav-right{
-  display: block;
-}
-
-input{
-  width: 30%;
-}
-
 
 button {
   padding: 0.2rem;
-
 }
 
-.checkbox1 {
-  background-color: #ffff00;
+.apple-pay-btn {
+  background-color: #E0FBFC;
 }
 
-.checkbox2 {
-  background-color: #0099ff;
+.hire-btn {
+  background-color: #EE6C4D;
 }
 
-.checkbox3 {
-  background-color: #ff0000;
+.link-btn {
+  background-color: #3D5A80;
 }
 
-.checkbox4 {
-  background-color: #009933;
-}
-
-h1{
-  margin:0;
-  padding:0;
-}
-
-.nav-menu-bar{
-  margin:0;
-  display: flex;
-}
-
-.nav-menu-bar li{
-  padding-left: 10%;
-  margin-top: 5%;
-}
-
-.side-buttons{
-  margin:0;
+.side-buttons {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -233,28 +213,18 @@ h1{
 }
 
 .section-side-content{
-  margin:0 4%;
-  margin-top: 8%;
+  margin:8% 4% 0;
 }
 
 .section-side-content div {
   padding: 2%;
-  
-}
-
-.section-side-content-three {
-
+ 
 }
 
 .section-side-content input{
   width: 70%;
 }
 
-.sidebar i{
-  padding-right: 5px;
-}
 
-/*#EE6C4D
-#3D5A80*/
 
 
