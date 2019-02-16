@@ -60,34 +60,73 @@ header {
   background-color: #fff;
   display: flex;
   grid-area: 1 / 2 / 2 / 4;
-  padding: 2%;
+  padding:0 1%;
+  justify-content: baseline;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: 2px;
 }
 
 .header-bar-one {
-  width:10%;
+  width: 6%;
+  margin-top: 8px;
 }
 
 .header-bar-two {
-  width:80%;
+  width:75%;
+  margin-top: 6px;
 }
 
 .header-bar-three {
-   width:10%;
+   width:19%;
+}
+
+.header-icon {
+  margin-top: 6%;
+}
+
+#header-caret {
+  color:blue;
 }
 
 .header input, 
 .header i {
-  color: #9fa3a8; 
+  color: #9fa3a8;
 }
 
+.fa-bars{
+  padding-right: 26px;
+  border-right-color: gray;
+  border-right-style: solid;
+  border-right-width: 1px;
+  line-height: 60px;
+}
+
+.fa-phone,
+.fa-calendar-alt {
+  padding: 0 26px;
+  border-right-color: gray;
+  border-right-style: solid;
+  border-right-width: 1px;
+  line-height: 60px;
+}
+
+.fa-th {
+   padding: 0 26px;
+}
+/*
+.fa-th::hover {
+  background-color: blue;
+}*/
+
 input {
-  width: 30%;
-  height: 30px;
+  width: 32%;
   border: 0px solid;
+  margin-top: 3%;
 }
 
 nav {
-  background-color: #E0FBFC;
+  background-color: aliceblue;
   display: grid;
   grid-area: 2 / 2 / 3 / 4;
   padding: 3% 1%;
@@ -106,9 +145,8 @@ h1 {
   padding:0;
 }
 
-.open-btn::before {
- color: green;
- border-radius: 50%;
+.nav-aside-left a::hover {
+ color:  #a9abad;
 }
 
 .nav-aside-left,
@@ -118,8 +156,8 @@ h1 {
 
 .nav-aside-left p,
 .nav-aside-right p {
-  padding:2%;
-  margin:0;
+  padding: 0;
+  margin: 0;
   display: inline;
 }
 
@@ -129,13 +167,26 @@ h1 {
 }
 
 .nav-aside-right button {
-  border-radius: 45%;
-  padding: 5px;
-
+  background-color: #fff;
 }
 
- .nav-aside-left a::hover {
- color:  #a9abad;
+.open-btn {
+  border-radius: 45%;
+  padding: 5px;
+  width: 20%;
+  margin-right: 4%;
+  color: gray;
+  border: 1px solid;
+}
+
+.open-btn input {
+ /*style green circle*/
+}
+
+.nav-right-btns {
+  margin-right: 4%;
+  color: grey;
+  border: 1px solid;
 }
 
 .nav-menu-bar {
@@ -144,8 +195,16 @@ h1 {
 }
 
 .nav-menu-bar li {
-  padding-left: 10%;
-  margin-top: 5%;
+  padding-left: 7%;
+  margin-top: 5%; 
+}
+
+.profile-hover {
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: blue;
+border-bottom-left-radius: 0;
+padding-left: 0;
 }
 
 .section-one {
