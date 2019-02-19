@@ -1,47 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="normalize.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
   <link rel="stylesheet" href="/Users/kate/Desktop/Turing/Mod1/StaticCompTwo/styles.css">
-  <!-- normalize css -->
-  <title>Document</title>
+  <title>Static Comp Two</title>
 </head>
 <body>
-  <aside>
-    <div><!-- round image and dropdown --></div>
-    <div> <!-- unordered list menu --></div>
-    <div><!-- unordered list menu --></div>
-    <div> <!-- colored catagory checkboxes --></div>
-  </aside>
-  <header>
-    <div><!-- aside hamburger menu --></div>
-    <div><!-- Search bar --></div>
-    <div><!-- three hover buttons --></div>
-  </header>
-  <nav>
-    <aside><!-- left - text and icon --></aside>
-    <aside><!-- four buttons --></aside>
-    <div><!-- ul seven menu options --></div>
-  </nav>
-  <section class="section-one">
-     <div><!-- 3 images and 1 button --></div>
-     <div><!-- 1 graphic and 1 button --></div>
-     <div class="throughline"><!-- pseudo code line and icon --></div>
-  </section> 
-  <section class="section-two">
-     <article>
-       <div >
-        <!-- table with 9 rows and 2 columns, use grid, 1 button, 1 image-->
-       </div>
-     </article>
-     <article>
-       <div><!-- 3 buttons, flex --></div>
-       <div><!-- icon, header, content, link, button --></div>
-       <div><!-- icon, header, content, link, button --></div>
-       <div><!-- icon, header, content, link, button --></div>
-     </article>
-  </section> 
+  <div class="wrapper">
+    <aside class="sidebar">
+      <div class="user-profile">
+        <img src="Images/Defy Headshot Two.png" alt="Potential Employee Headshot">
+        <form>
+          <select class="potential-employee-dropdown"  style="-webkit-appearance: none;">
+            <option value="Sam H.">Sam H.</option>
+            <option value="M & M">M & M</option>
+            <option value="60 Cents">60 Cents</option>
+            <option value="Big Mak">Big Mak</option>
+          </select> 
+          <i id="drop-down" class="fas fa-sort-down"></i>
+        </form>
+      </div>
+      <div>
+        <ul class="aside-menu">
+          <li>Main</li>
+          <li><i class="fas fa-home"></i>HOME</li>
+          <li><i class="fas fa-suitcase"></i>JOBS</li>
+          <li><i class="fas fa-newspaper"></i>RESUME</li>
+          <li><i class="fas fa-paperclip"></i>TASKS</li>
+          <li><i class="fas fa-calendar-alt"></i>CALENDAR</li>
+        </ul> 
+      </div>
+      <div>
+        <ul class=" aside-menu">
+          <li>Admin</li>
+          <li><i class="fas fa-user"></i>USERS</li>
+          <li><i class="fas fa-address-book"></i>NETWORK</li>
+          <li><i class="fas fa-code-branch"></i>WORKFLOWS</li>
+          <li><i class="fas fa-user-tie"></i>JOB BOARD</li>
+          <li><i class="fab fa-stack-exchange"></i>MENTORING</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="aside-menu">
+          <p>Filter By:</p>
+          <div class="checkbox-1">
+            <li><input type="checkbox" ><label>Job Title</label></li>
+          </div>
+          <div class="checkbox-2">
+            <li><input type="checkbox"><label>Experience Level</label></li>
+          </div>
+          <div class="checkbox-3">
+            <li><input type="checkbox"><label>Release Date</label></li></div>
+          <div class="checkbox-4">
+            <li><input  type="checkbox"><label>Location</label></li></div>   
+        </ul>
+      </div>
+    </aside>
+    <header class="header">
+      <div class="header-bar-one">
+        <i id="header-caret" class="fas fa-caret-left fa-1x"></i><i class=" header-icon fas fa-bars fa-1x"></i> 
+      </div>
+      <div class="header-bar-two">
+        <i class="fas fa-search icon-style fa-1x"></i>
+        <input type="text" value="Search for applicants, mentors, or jobs" >
+      </div>
+      <div class= "header-bar-three">
+        <i class=" header-icon fas fa-phone icon-style fa-1x"></i>
+        <i class=" header-icon fas fa-calendar-alt icon-style fa-1x"></i>
+        <i class=" header-icon fas fa-th icon-style fa-1x"></i>
+      </div>
+    </header>
+    <nav>
+      <aside class="nav-aside-left">
+        <h1>Front End Developer</h1>
+          <i class="fas fa-map-marker-alt icon-style"></i>
+          <p>Canyon City, CO - </p>
+          <p><a href="#">View on Map</a></p>
+      </aside>
+      <aside class="nav-aside-right">
+        <button class="open-btn"><input type="checkbox">Open</button>
+        <button><i class=" nav-right-btns fas fa-bookmark"></i></button>
+        <button><i class=" nav-right-btns fas fa-trash-alt"></i></button>
+        <button><i class=" nav-right-btns fas fa-pen"></i></button>
+      </aside>
+      <div>
+        <ul class="nav-menu-bar">
+          <li class="profile-hover">PROFILE</li>
+          <li>RESUME</li>
+          <li>SKILLS</li>
+          <li>RECOMMENDATIONS</li>
+          <li>PORTFOLIO</li>
+          <li>SCHEDULE</li>
+          <li>NOTIFICATIONS</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section-one">
+      <div>
+        <img src="Images/Donut Chart.png" alt="Commits Data">
+        <button class="section-btn">Total</button>
+      </div>
+      <div>
+        <img src="Images/Bar Chart.png" alt="Commit Daily Data">
+        <button class="section-btn">View In Depth</button>
+      </div>
+    </section> 
+    <section class="section-two">
+      <article>
+        <div>
+          <table>
+          <tr>
+            <th class="table-top">PROFILE</th>
+            <th class="table-top"><button class="input-button"><i class="fas fa-pencil-alt icon-style"></i>EDIT</button></th>
+          </tr>
+          <tr>
+            <th>JOB TITLE</th>
+            <th>Front End Developer</th>
+          </tr>
+          <tr>
+            <th>LOCATION</th>
+            <th>Canyon City, CO</th>
+          </tr>
+          <tr>
+            <th>EMPLOYMENT TYPE</th>
+            <th>Full-Time</th>
+          </tr>
+          <tr>
+            <th>EXPERIENCE</th>
+            <th>Entry</th>
+          </tr>
+          <tr>
+            <th>STATUS</th>
+            <th>Actively Searching</th>
+          </tr>
+          <tr>
+            <th>ABOUT</th>
+            <th>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quisquam quos, veniam illo odit, obcaecati fugiat magnam, possimus ullam hic dolorem, aliquid vero nisi mollitia error accusamus rerum beatae minima.</th>
+          </tr>
+          <tr>
+            <th>RELEASED DATE</th>
+            <th>December 3rd</th>
+          </tr>
+          <tr>
+            <th>SUGGESTED SALARY</th>
+            <th>$45,000</th>
+          </tr>
+          </table>
+        </div>
+      </article>
+      <article class="section-side-content">
+        <div class="side-buttons">
+          <button class='apple-pay-btn'><i class="fab fa-cc-apple-pay icon-style"></i>Donate</button>
+          <button class="hire-btn"><i class="fas fa-door-open icon-style"></i>Hire</button>
+          <button class="link-btn"><i class="fas fa-link icon-style"></i>Sponsor</button></div>
+        <div>
+          <i class="fab fa-codepen icon-style"></i>Link to Codepen <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum molestias ex sint expedita explicabo!</p><input type="" name="" value="http://www.copdepen.eieio">
+          <button class="input-button">Link</button>
+        </div>
+        <div class="section-side-content-three">
+          <i class="fas fa-award icon-style"></i>Support Work<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus voluptas reiciendis officia neque vero!</p><input type="" name="" value="http://www.promotemywork.me"><button class="input-button">Promote</button>
+        </div>
+        <div class="section-side-content-three">  <i class="fas fa-user-graduate icon-style"></i>Contact Graduate<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio expedita consequuntur laborum. Dolore, facere.</p><input type="text" name="" value="www.jail@bird.con">
+      </article>
+    </section>
+  </div> 
 </body>
 </html>
+
+
