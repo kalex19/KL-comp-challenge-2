@@ -7,10 +7,10 @@ body {
   margin: 0;
 }
 
-.wrapper { 
+.wrapper {
   display: grid;
   grid-template-columns: 18% 56% 26%;
-  grid-template-rows: 10% 10% 20% auto;
+  grid-template-rows: 6% 10% 30% auto;
 }
 
 .sidebar {
@@ -63,6 +63,10 @@ aside li {
   padding: 3%;
 }
 
+.aside-menu input {
+  width: 8%;
+}
+
 .icon-style,
 .sidebar i {
   padding-right: 5px;
@@ -102,7 +106,7 @@ header {
   color: #0f60e2;
 }
 
-.header input, 
+.header input,
 .header i {
   color: #9fa3a8;
 }
@@ -201,7 +205,7 @@ h1 {
 
 .nav-menu-bar li {
   margin-left: 7%;
-  margin-top: 5%; 
+  margin-top: 5%;
 }
 
 .section-btn {
@@ -265,11 +269,12 @@ table {
   border-bottom: 0px #000 solid;;
   border-left: 0px #000 solid;
   border-right: 0px #000 solid;
+  line-height: 1.2em;
   list-style: none;
   margin-top: 2%;
   margin: 0% 10%;
   padding: 0;
-  table-layout: fixed;
+  table-layout: auto;
   width: 86%;
 }
 
@@ -323,12 +328,11 @@ button {
 }
 
 .section-side-content{
-  margin: 8% 4% 0;
+  margin: 0 4%;
 }
 
 .section-side-content div {
   padding: 2%;
- 
 }
 
 .section-side-content input{
@@ -337,7 +341,7 @@ button {
 
 .input-button {
   background-color: #EE6C4D;
-  width: 17%;
+  width: 27%;
 }
 
 .section-side-content-three {
@@ -345,7 +349,3 @@ button {
   border-top-style: solid;
   border-top-width: 3px;
 }
-
-
-
-
